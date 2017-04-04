@@ -1,9 +1,9 @@
 # fmp
 How to run it
   Build the app in lib: 
-     ghc --make sieve.hs 
+  ghc --make sieve.hs 
   Run the app from lib: 
-      ./sieve
+  ./sieve
   Run the tests from test:
       runghc -i../lib primes_test.hs
       runghc -i../lib table_test.hs
