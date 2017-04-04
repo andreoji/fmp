@@ -2,9 +2,13 @@ module Primes
 (
   merge
 , xmerge
+, mergeAll
 ) where
 
-primes = 1
+mergeAll :: Ord a => [[a]] -> [a]
+mergeAll (xs:xss) = xmerge xs (mergeAll xss)
+mergeAll [] = []
+
 merge :: Ord a => [a] -> [a] -> [a]
 merge xs [] = xs 
 merge [] ys = ys 
