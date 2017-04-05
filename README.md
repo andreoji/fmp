@@ -1,6 +1,10 @@
 # fmp
 ### How to run it
 
+```
+Download the [Haskell Platform](https://www.haskell.org/platform/).
+```
+
 Build the app in lib:
 
 ```
@@ -29,7 +33,7 @@ runghc -i../lib formatting_test.hs
 I used the following for definitions of Brute Force / Trial Division:
 https://trans4mind.com/personal_development/mathematics/numberTheory/divisibilityBruteForce.htm
 
-The Sieve is and Incremental Sieve as defined by the list comprehension here:
+The Sieve is an Incremental Sieve as defined by the list comprehension here:
 https://en.m.wikipedia.org/wiki/Sieve_of_Eratosthenes
 
 The Sieve is 'Genuine':
