@@ -87,3 +87,15 @@ I'll be pursuing.
 ```
 
 ### What I'd do with it if I had more time
+
+```
+The app is currently one shot, then you need to run it again.
+IO in Haskell is done via Monads, and I didn't want to get too
+into that at this juncture.
+
+I wrote the driver in the interactive prompt, so there's no tests
+around it. Testing around IO was again going into Monad territory.
+
+I only skimmed HUnit; so tests run at the individual module level.
+Should really be able to run them for the project.
+```
