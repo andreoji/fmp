@@ -52,7 +52,7 @@ ghci Primes.hs
 takeNPrimes 50000
 ```
 
-Answer:
+The last prime in the list should be:
 
 ```
 611953
