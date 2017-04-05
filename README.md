@@ -1,9 +1,7 @@
 # fmp
 ### How to run it
 
-```
 Download the [Haskell Platform](https://www.haskell.org/platform/).
-```
 
 Build the app in lib:
 
