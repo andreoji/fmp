@@ -45,6 +45,8 @@ runghc -i../lib formatting_test.hs
 To test large prime geneartion, say 50 000:
 
 ```
+From lib:
+
 gchi Primes.hs
 
 takeNPrimes 50000
