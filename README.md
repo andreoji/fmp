@@ -47,7 +47,7 @@ To test large prime geneartion, say 50 000:
 ```
 From lib:
 
-gchi Primes.hs
+ghci Primes.hs
 
 takeNPrimes 50000
 ```
