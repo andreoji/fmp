@@ -42,7 +42,7 @@ runghc -i../lib formatting_test.hs
 
 ```
 
-To test large prime geneartion, say 50 000:
+To test large prime generation, say 50 000:
 
 ```
 From lib:
