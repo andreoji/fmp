@@ -25,6 +25,18 @@ runghc -i../lib table_test.hs
 runghc -i../lib formatting_test.hs
 
 ```
+
+To test large prime geneartion, say 50 000
+
+```
+gchi Primes.hs
+
+takeNPrimes 50000
+```
+
+Answer: 611953
+[50, 000 prime numbers](https://www2.cs.arizona.edu/icon/oddsends/primes.htm)
+
 ### What I'm pleased with
 
 ```
