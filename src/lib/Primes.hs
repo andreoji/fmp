@@ -6,15 +6,11 @@ module Primes
 , takeNPrimes
 ) where
 
+import Maths
+
 primes = 2:([3..] \\ composites)
   where
   composites = mergeAll [map (p*) [p..] | p <- primes]
-
-xs \\ [] = xs
-[] \\ ys = ys
-(x:xs) \\ (y:ys) | x<y = x:(xs \\ (y:ys))
-                 | x==y = xs \\ ys
-                 | x>y = (x:xs) \\ ys
 
 mergeAll :: Ord a => [[a]] -> [a]
 mergeAll (xs:xss) = xmerge xs (mergeAll xss)
