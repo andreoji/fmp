@@ -3,15 +3,14 @@ import System.IO
 import Table
 
 isInteger :: String -> Bool
-
 isInteger st
-      | length st == 0 = error "Empty string. cannot evaluate"
+      | length st == 0 = error "Empty string. Cannot evaluate"
       | length st == 1 = isNumber $ head st
       | otherwise = if isNumber (head st) == True then isInteger (tail st) else False
 
 isValidType :: String -> Bool
 isValidType st
-      | length st == 0 = error "Empty string. cannot evaluate"
+      | length st == 0 = error "Empty string. Cannot evaluate"
       | st == "primes" = True
       | st == "fibs" = True
       | otherwise = False
