@@ -15,6 +15,13 @@ Run the app from lib:
 ./sieve
 ```
 
+```
+Enter the number.
+```
+
+```
+Enter either primes or fibs for the sequence.
+```
 Sample Output for first 10 primes:
 
 ```
@@ -31,14 +38,33 @@ Sample Output for first 10 primes:
 | 29| 58| 87| 145| 203| 319| 377| 493| 551| 667| 841|
 ```
 
+Sample Output for first 10 fibs:
+
+```
+|  | 1| 1| 2| 3| 5| 8| 13| 21| 34| 55|
+| 1| 1| 1| 2| 3| 5| 8| 13| 21| 34| 55|
+| 1| 1| 1| 2| 3| 5| 8| 13| 21| 34| 55|
+| 2| 2| 2| 4| 6| 10| 16| 26| 42| 68| 110|
+| 3| 3| 3| 6| 9| 15| 24| 39| 63| 102| 165|
+| 5| 5| 5| 10| 15| 25| 40| 65| 105| 170| 275|
+| 8| 8| 8| 16| 24| 40| 64| 104| 168| 272| 440|
+| 13| 13| 13| 26| 39| 65| 104| 169| 273| 442| 715|
+| 21| 21| 21| 42| 63| 105| 168| 273| 441| 714| 1155|
+| 34| 34| 34| 68| 102| 170| 272| 442| 714| 1156| 1870|
+| 55| 55| 55| 110| 165| 275| 440| 715| 1155| 1870| 3025|
+```
 Run the tests from test:
 
 ```
 runghc -i../lib primes_test.hs
 
+runghc -i../lib fibs_test.hs
+
 runghc -i../lib table_test.hs
 
 runghc -i../lib formatting_test.hs
+
+runghc -i../lib maths_test.hs
 
 ```
 
@@ -98,4 +124,20 @@ around it. Testing around IO was again going into Monad territory.
 
 I only skimmed HUnit; so tests run at the individual module level.
 Should really be able to run them for the project.
+```
+
+### Fibonacci and other work
+
+```
+The app has been extended work with a Fibonacci sequence.
+Introducing this change was relatively straight forward in
+terms of design.
+
+There was some discussion around the set difference operator
+(\\) used by primes; namely a lack of testing and where this
+operator should reside. As everyting is a function in Haskell
+it dawned on me to simply export the operator (as with any 
+function in Haskell) to enable testing.
+
+The difference operator now resides in the Maths module.
 ```
