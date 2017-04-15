@@ -3,8 +3,8 @@ module Fibs
   takeNFibs
 ) where
 
-fibs :: [Int]
+fibs :: [Integer]
 fibs = 1:1:zipWith (+) fibs (tail fibs)
 
-takeNFibs :: Int -> [Int]
+takeNFibs :: Int -> [Integer]
 takeNFibs n =  take n fibs
