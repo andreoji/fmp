@@ -24,7 +24,7 @@ createTable n tableType
     | otherwise  = error "Cannot evaluate table"
 
 
-formatTable n = putStrLn str
+formatTable n tableType = putStrLn str
   where
   str = format t
-  t = createTable n ""
+  t = createTable n tableType 
