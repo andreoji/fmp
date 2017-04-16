@@ -26,5 +26,5 @@ merge (x:xs) (y:ys)
 
 xmerge (x:xs) ys = x:merge xs ys
 
-takeNPrimes :: Int -> [Int]
+takeNPrimes :: Int -> [Integer]
 takeNPrimes n = take n primes

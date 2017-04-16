@@ -6,7 +6,7 @@ module Formatting
 
 import Data.List (intersperse)
 
-join :: [Int] -> String
+join :: [Integer] -> String
 join nums = (concat . intersperse "| " . map show $ nums) ++ "|\n"
 
 format [] = []

@@ -17,7 +17,7 @@ fibsTable n = [(0:fibs)] ++ [map (f*) (1:fibs) | f <- fibs]
   where
   fibs = takeNFibs n
 
-createTable :: Int -> [Char] -> [[Int]]
+createTable :: Int -> [Char] -> [[Integer]]
 createTable n tableType
     | tableType == "primes" =  primesTable $ n
     | tableType == "fibs"   =  fibsTable $ n
